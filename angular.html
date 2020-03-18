@@ -1,0 +1,17 @@
+<!--html>head>(script+link)+body>.container-flui>.row>(.col-12.p-4>inp+(.col-12.p2.p1-4{Olá Mundo!}))-->
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js" async"></script> <!--CDN do Angular-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body ng-app>
+    <div class="container-flui">
+        <div class="row">
+            <div class="col-12 p-4">
+                <input type="text" ng-model="name">
+                <div class="col-12 p2 p1-4">Olá {{ name || 'Mundo!'}}</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
